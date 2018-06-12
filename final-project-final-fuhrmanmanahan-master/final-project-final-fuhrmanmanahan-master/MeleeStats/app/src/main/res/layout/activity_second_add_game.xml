@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.benfuhrman.meleestats.SecondAddGameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:stretchColumns="*"
+            android:weightSum="6">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <ImageButton
+                    android:id="@+id/btn_battlefield"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:onClick="addBorder"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/battlefield_small" />
+
+                <ImageButton
+                    android:id="@+id/btn_dreamland"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:onClick="addBorder"
+                    app:srcCompat="@drawable/dreamland_small" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <ImageButton
+                    android:id="@+id/btn_yoshis_story"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:onClick="addBorder"
+                    app:srcCompat="@drawable/yoshis_story_small" />
+
+                <ImageButton
+                    android:id="@+id/btn_final_destination"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:onClick="addBorder"
+                    app:srcCompat="@drawable/final_destination_small" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <ImageButton
+                    android:id="@+id/btn_pokemon_stadium"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:adjustViewBounds="true"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:scaleType="fitXY"
+                    android:onClick="addBorder"
+                    app:srcCompat="@drawable/pokemon_stadium_small" />
+
+                <ImageButton
+                    android:id="@+id/btn_fountain_of_dreams"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:maxHeight="50dp"
+                    android:maxWidth="50dp"
+                    android:onClick="addBorder"
+                    app:srcCompat="@drawable/fountain_of_dreams_small" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <CheckBox
+                    android:id="@+id/multiple"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Multiple" />
+
+                <CheckBox
+                    android:id="@+id/friendly"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Friendly" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <ToggleButton
+            android:id="@+id/toggleWinStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="Loss"
+            android:textOn="Win" />
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="addMatch"
+            android:text="Add" />
+
+    </LinearLayout>
+</RelativeLayout>
